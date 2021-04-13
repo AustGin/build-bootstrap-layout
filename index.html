@@ -11,7 +11,7 @@
     <title>Bootstrap Layout E01</title>
   </head>
   <body>
-    <header>
+    <header class="mb-5">
       <div class="container">
         <nav class="navbar">
           <ul class="nav nav-pills">
@@ -24,42 +24,48 @@
       </div>
     </header>
 
-    <section>
-      <div class="container">
-        <h2>Header Banner Area</h2>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam sunt, obcaecati optio ducimus repellat, maiores voluptatem, facilis a nobis error totam minus voluptas itaque eaque alias laudantium ex mollitia asperiores!</p>
+    <section class="mb-5">
+      <div class="container text-light p-3 bg-dark rounded">
+        <h2 class="text-uppercase">Header Banner Area</h2>
+        <p class="lh-md fs-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam sunt, obcaecati optio ducimus repellat, maiores voluptatem, facilis a nobis error totam minus voluptas itaque eaque alias laudantium ex mollitia asperiores!</p>
       </div>
     </section>
 
     <section>
       <div class="container">
         <!-- To do: add the grid system for col 1. form, col 2. heading and text, col 3. heading and text --> 
-        <form>
-          <!-- The form will have to be move into the grid system -->
-          <h2>Sign In</h2>
-          <div class="form-group">
-            <label for="email">Your Email Address</label>
-            <input class="form-control" type="email" id="email">
+        <div class="row">
+          <div class="col-lg-6">
+            <form class="bg-primary p-3 text-light mb-3">
+              <!-- The form will have to be move into the grid system -->
+              <h2>Sign In</h2>
+              <div class="form-group">
+                <label for="email">Your Email Address</label>
+                <input class="form-control mb-2" type="email" id="email">
+              </div>
+              <div class="form-group">
+                <label for="password">Your Password</label>
+                <input class="form-control mb-2" type="password" id="password">
+              </div>
+              <div class="form-group mb-2">
+                <input class="form-check-input" type="checkbox" name="saved-pw" id="pw-save">
+                <label for="pw-save">Save Password</label>
+              </div>
+              <button class="btn btn-light" type="submit">Log In</button>
+            </form>
           </div>
-          <div class="form-group">
-            <label for="password">Your Password</label>
-            <input class="form-control" type="password" id="password">
+          <div class="row col-lg-6">
+            <div class="col-md-6">
+              <h2>Heading</h2>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus non est assumenda autem commodi fugit laborum beatae quae distinctio aspernatur quo veritatis nostrum provident animi unde, quas quod, dolores eius.</p>
+              <a class="btn btn-primary mb-3" href="#">View More</a>
+            </div>
+            <div class="col-md-6">
+              <h2>Heading</h2>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus non est assumenda autem commodi fugit laborum beatae quae distinctio aspernatur quo veritatis nostrum provident animi unde, quas quod, dolores eius.</p>
+              <a class="btn btn-primary mb-3" href="#">View More</a>
+            </div>
           </div>
-          <div class="form-group">
-            <input class="form-check-input" type="checkbox" name="saved-pw" id="pw-save">
-            <label for="pw-save">Save Password</label>
-          </div>
-          <button class="btn btn-light" type="submit">Log In</button>
-        </form>
-        <div>
-          <h2>Heading</h2>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus non est assumenda autem commodi fugit laborum beatae quae distinctio aspernatur quo veritatis nostrum provident animi unde, quas quod, dolores eius.</p>
-          <a class="btn" href="#">View More</a>
-        </div>
-        <div>
-          <h2>Heading</h2>
-          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Praesentium quo ullam placeat dolorum nesciunt deleniti autem error culpa atque quaerat incidunt doloribus unde quibusdam tenetur, harum quia sapiente excepturi eligendi?</p>
-          <a class="btn" href="#">View More</a>
         </div>
       </div>
     </section>
